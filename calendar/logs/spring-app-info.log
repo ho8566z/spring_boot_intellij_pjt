@@ -1,0 +1,97 @@
+2026-09-15 10:22:54 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 6616 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-15 10:22:54 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-15 10:22:56 INFO  [office.calendar.CalendarApplication] - Started CalendarApplication in 2.535 seconds (process running for 3.361)
+2026-09-15 10:23:00 INFO  [office.calendar.HomeController] - INFO : home()
+2026-09-15 10:23:02 INFO  [office.calendar.HomeController] - INFO : home()
+2026-09-15 11:07:10 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 6616 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-15 11:07:10 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-15 11:07:10 INFO  [office.calendar.CalendarApplication] - Started CalendarApplication in 0.568 seconds (process running for 2660.433)
+2026-09-15 11:07:48 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 6616 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-15 11:07:48 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-15 11:07:49 INFO  [office.calendar.CalendarApplication] - Started CalendarApplication in 0.491 seconds (process running for 2698.691)
+2026-09-15 11:09:13 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 6616 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-15 11:09:13 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-15 11:09:14 INFO  [office.calendar.CalendarApplication] - Started CalendarApplication in 0.465 seconds (process running for 2783.773)
+2026-09-15 11:12:45 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 6616 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-15 11:12:45 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-15 11:12:46 INFO  [office.calendar.CalendarApplication] - Started CalendarApplication in 0.463 seconds (process running for 2995.792)
+2026-09-15 11:17:01 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 6616 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-15 11:17:01 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-15 11:17:02 INFO  [office.calendar.CalendarApplication] - Started CalendarApplication in 0.566 seconds (process running for 3252.119)
+2026-09-15 11:17:04 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 6616 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-15 11:17:04 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-15 11:17:04 INFO  [office.calendar.CalendarApplication] - Started CalendarApplication in 0.434 seconds (process running for 3254.19)
+2026-09-15 11:35:23 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 16144 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-15 11:35:23 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-15 11:43:36 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 15840 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-15 11:43:36 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-15 11:46:12 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 8036 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-15 11:46:12 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-15 12:03:54 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 1408 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-15 12:03:54 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-15 12:03:57 INFO  [office.calendar.CalendarApplication] - Started CalendarApplication in 3.355 seconds (process running for 4.209)
+2026-09-15 12:04:02 INFO  [office.calendar.HomeController] - INFO : home()
+2026-09-15 12:14:28 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 1408 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-15 12:14:28 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-15 12:14:29 INFO  [office.calendar.CalendarApplication] - Started CalendarApplication in 0.575 seconds (process running for 635.785)
+2026-09-15 12:28:35 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 1408 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-15 12:28:35 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-15 12:28:36 INFO  [office.calendar.CalendarApplication] - Started CalendarApplication in 0.568 seconds (process running for 1483.138)
+2026-09-15 12:28:38 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 1408 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-15 12:28:38 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-15 12:28:38 INFO  [office.calendar.CalendarApplication] - Started CalendarApplication in 0.489 seconds (process running for 1485.29)
+2026-09-15 12:33:24 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 7508 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-15 12:33:24 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-15 12:33:26 INFO  [office.calendar.CalendarApplication] - Started CalendarApplication in 2.801 seconds (process running for 3.614)
+2026-09-15 12:33:32 INFO  [office.calendar.HomeController] - INFO : home()
+2026-09-15 12:33:35 INFO  [office.calendar.HomeController] - INFO : home()
+2026-09-15 12:34:49 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 7508 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-15 12:34:49 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-15 12:34:49 INFO  [office.calendar.CalendarApplication] - Started CalendarApplication in 0.569 seconds (process running for 86.758)
+2026-09-16 11:11:46 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 10736 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-16 11:11:46 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-16 11:11:52 INFO  [office.calendar.CalendarApplication] - Started CalendarApplication in 6.455 seconds (process running for 7.588)
+2026-09-16 11:12:01 INFO  [office.calendar.HomeController] - INFO:: home()
+2026-09-16 11:25:53 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 10736 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-16 11:25:53 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-16 11:25:54 INFO  [office.calendar.CalendarApplication] - Started CalendarApplication in 0.846 seconds (process running for 849.785)
+2026-09-16 11:28:17 INFO  [calendar.member.MemberService] - MEMBER LOGIN SUCCESS
+2026-09-16 11:34:38 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 14688 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-16 11:34:38 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-16 11:34:43 INFO  [office.calendar.CalendarApplication] - Started CalendarApplication in 5.54 seconds (process running for 6.446)
+2026-09-16 11:34:49 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 14688 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-16 11:34:49 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-16 11:34:50 INFO  [office.calendar.CalendarApplication] - Started CalendarApplication in 0.895 seconds (process running for 13.992)
+2026-09-16 11:42:59 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 14688 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-16 11:42:59 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-16 11:43:00 INFO  [office.calendar.CalendarApplication] - Started CalendarApplication in 0.779 seconds (process running for 503.661)
+2026-09-16 11:45:48 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 14688 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-16 11:45:48 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-16 11:45:49 INFO  [office.calendar.CalendarApplication] - Started CalendarApplication in 0.882 seconds (process running for 672.709)
+2026-09-16 11:45:51 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 14688 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-16 11:45:51 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-16 11:45:52 INFO  [office.calendar.CalendarApplication] - Started CalendarApplication in 1.075 seconds (process running for 675.437)
+2026-09-16 11:53:03 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 14688 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-16 11:53:03 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-16 11:53:04 INFO  [office.calendar.CalendarApplication] - Started CalendarApplication in 0.742 seconds (process running for 1107.457)
+2026-09-16 11:53:06 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 14688 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-16 11:53:06 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-16 11:53:07 INFO  [office.calendar.CalendarApplication] - Started CalendarApplication in 1.229 seconds (process running for 1110.427)
+2026-09-16 12:23:29 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 14688 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-16 12:23:29 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-16 12:23:31 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 14688 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-16 12:23:31 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-16 12:23:32 INFO  [office.calendar.CalendarApplication] - Started CalendarApplication in 0.823 seconds (process running for 2935.648)
+2026-09-16 12:26:07 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 14688 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-16 12:26:07 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-16 12:26:08 INFO  [office.calendar.CalendarApplication] - Started CalendarApplication in 1.067 seconds (process running for 3092.127)
+2026-09-16 12:29:53 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 11008 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-16 12:29:53 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-16 12:29:58 INFO  [office.calendar.CalendarApplication] - Started CalendarApplication in 6.117 seconds (process running for 7.099)
+2026-09-16 12:30:06 INFO  [calendar.member.MemberService] - MEMBER LOGIN SUCCESS
+2026-09-16 12:36:07 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 11008 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-16 12:36:07 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-16 12:36:08 INFO  [office.calendar.CalendarApplication] - Started CalendarApplication in 0.976 seconds (process running for 377.037)
+2026-09-16 12:39:56 INFO  [office.calendar.CalendarApplication] - Starting CalendarApplication using Java 17.0.20.1 with PID 11008 (C:\lyh\springboot_intellij\pjt\calendar\build\classes\java\main started by DW in C:\lyh\springboot_intellij\pjt\calendar)
+2026-09-16 12:39:56 INFO  [office.calendar.CalendarApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-09-16 12:39:57 INFO  [office.calendar.CalendarApplication] - Started CalendarApplication in 0.859 seconds (process running for 605.588)
