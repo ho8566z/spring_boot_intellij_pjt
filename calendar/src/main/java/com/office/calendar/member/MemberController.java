@@ -152,12 +152,12 @@ public class MemberController {
     //
     @GetMapping("/signin_result")
     public String signinResult(
-            @RequestParam(value = "logininedID", required = false) String logininedID,
+            @RequestParam(value = "loginedID", required = false) String loginedID,
             Model model) {
         log.info(CLASS_NAME.concat("signinResult()"));
 
         String nextPage = "member/signin_result";
-        model.addAttribute("logininedID", logininedID);
+        model.addAttribute("loginedID", loginedID);
 
         return nextPage;
     }

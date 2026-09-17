@@ -1737,3 +1737,782 @@ org.springframework.security.authentication.InternalAuthenticationServiceExcepti
 2026-09-17 11:51:49 INFO  [orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-09-17 11:51:49 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-3 - Shutdown initiated...
 2026-09-17 11:51:49 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-3 - Shutdown completed.
+2026-09-17 11:57:41 INFO  [devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-17 11:57:41 INFO  [devtools.env.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-17 11:57:41 INFO  [repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-17 11:57:41 INFO  [repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
+2026-09-17 11:57:42 INFO  [boot.tomcat.TomcatWebServer] - Tomcat initialized with port 8090 (http)
+2026-09-17 11:57:42 INFO  [coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8090"]
+2026-09-17 11:57:42 INFO  [catalina.core.StandardService] - Starting service [Tomcat]
+2026-09-17 11:57:42 INFO  [catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-17 11:57:42 INFO  [context.servlet.WebApplicationContextInitializer] - Root WebApplicationContext: initialization completed in 1577 ms
+2026-09-17 11:57:42 INFO  [hibernate.orm.jpa] - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-17 11:57:42 INFO  [hibernate.orm.core] - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-09-17 11:57:43 INFO  [jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-17 11:57:43 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2026-09-17 11:57:43 INFO  [hikari.pool.HikariPool] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@799254ed
+2026-09-17 11:57:43 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2026-09-17 11:57:43 WARN  [hibernate.orm.deprecation] - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-17 11:57:43 INFO  [orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/DB_CALENDAR]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: DB_CALENDAR/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-17 11:57:44 INFO  [hibernate.orm.core] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-17 11:57:44 INFO  [orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-17 11:57:45 INFO  [repository.query.QueryEnhancerFactories] - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-17 11:57:45 WARN  [jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-17 11:57:45 INFO  [authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name memberDetailsService
+2026-09-17 11:57:46 INFO  [coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8090"]
+2026-09-17 11:57:46 INFO  [boot.tomcat.TomcatWebServer] - Tomcat started on port 8090 (http) with context path '/'
+2026-09-17 11:57:47 INFO  [[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-17 11:57:47 INFO  [web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2026-09-17 11:57:47 INFO  [web.servlet.DispatcherServlet] - Completed initialization in 2 ms
+2026-09-17 11:59:18 INFO  [devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2026-09-17 11:59:18 INFO  [boot.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-17 11:59:18 INFO  [coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8090"]
+2026-09-17 11:59:18 INFO  [boot.tomcat.GracefulShutdown] - Graceful shutdown complete
+2026-09-17 11:59:18 INFO  [coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8090"]
+2026-09-17 11:59:18 INFO  [orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-17 11:59:18 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+2026-09-17 11:59:18 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+2026-09-17 11:59:19 INFO  [repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-17 11:59:19 INFO  [repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
+2026-09-17 11:59:19 INFO  [boot.tomcat.TomcatWebServer] - Tomcat initialized with port 8090 (http)
+2026-09-17 11:59:19 INFO  [coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8090"]
+2026-09-17 11:59:19 INFO  [catalina.core.StandardService] - Starting service [Tomcat]
+2026-09-17 11:59:19 INFO  [catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-17 11:59:19 INFO  [context.servlet.WebApplicationContextInitializer] - Root WebApplicationContext: initialization completed in 836 ms
+2026-09-17 11:59:19 INFO  [hibernate.orm.jpa] - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-17 11:59:19 INFO  [jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-17 11:59:19 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-2 - Starting...
+2026-09-17 11:59:19 INFO  [hikari.pool.HikariPool] - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@fe28fcc
+2026-09-17 11:59:19 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-2 - Start completed.
+2026-09-17 11:59:19 WARN  [hibernate.orm.deprecation] - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-17 11:59:19 INFO  [orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/DB_CALENDAR]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: DB_CALENDAR/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-17 11:59:19 INFO  [hibernate.orm.core] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-17 11:59:19 INFO  [orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-17 11:59:19 WARN  [jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-17 11:59:19 INFO  [authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name memberDetailsService
+2026-09-17 11:59:20 INFO  [coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8090"]
+2026-09-17 11:59:20 INFO  [boot.tomcat.TomcatWebServer] - Tomcat started on port 8090 (http) with context path '/'
+2026-09-17 11:59:20 INFO  [devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2026-09-17 11:59:20 INFO  [[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-17 11:59:20 INFO  [web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2026-09-17 11:59:20 INFO  [web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+2026-09-17 11:59:21 INFO  [devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2026-09-17 11:59:21 INFO  [boot.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-17 11:59:21 INFO  [coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8090"]
+2026-09-17 11:59:21 INFO  [boot.tomcat.GracefulShutdown] - Graceful shutdown complete
+2026-09-17 11:59:21 INFO  [coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8090"]
+2026-09-17 11:59:21 INFO  [orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-17 11:59:21 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-2 - Shutdown initiated...
+2026-09-17 11:59:21 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-2 - Shutdown completed.
+2026-09-17 11:59:22 INFO  [repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-17 11:59:22 INFO  [repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 10 ms. Found 2 JPA repository interfaces.
+2026-09-17 11:59:22 INFO  [boot.tomcat.TomcatWebServer] - Tomcat initialized with port 8090 (http)
+2026-09-17 11:59:22 INFO  [coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8090"]
+2026-09-17 11:59:22 INFO  [catalina.core.StandardService] - Starting service [Tomcat]
+2026-09-17 11:59:22 INFO  [catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-17 11:59:22 INFO  [context.servlet.WebApplicationContextInitializer] - Root WebApplicationContext: initialization completed in 401 ms
+2026-09-17 11:59:22 INFO  [hibernate.orm.jpa] - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-17 11:59:22 INFO  [jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-17 11:59:22 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-3 - Starting...
+2026-09-17 11:59:22 INFO  [hikari.pool.HikariPool] - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2cfb6a1f
+2026-09-17 11:59:22 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-3 - Start completed.
+2026-09-17 11:59:22 WARN  [hibernate.orm.deprecation] - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-17 11:59:22 INFO  [orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/DB_CALENDAR]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: DB_CALENDAR/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-17 11:59:22 INFO  [hibernate.orm.core] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-17 11:59:22 INFO  [orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-17 11:59:22 WARN  [jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-17 11:59:22 INFO  [authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name memberDetailsService
+2026-09-17 11:59:22 INFO  [coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8090"]
+2026-09-17 11:59:22 INFO  [boot.tomcat.TomcatWebServer] - Tomcat started on port 8090 (http) with context path '/'
+2026-09-17 11:59:22 INFO  [devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2026-09-17 12:16:53 INFO  [devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 14 class path changes (0 additions, 14 deletions, 0 modifications)
+2026-09-17 12:16:53 INFO  [boot.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-17 12:16:53 INFO  [coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8090"]
+2026-09-17 12:16:53 INFO  [boot.tomcat.GracefulShutdown] - Graceful shutdown complete
+2026-09-17 12:16:53 INFO  [coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8090"]
+2026-09-17 12:16:53 INFO  [orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-17 12:16:53 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-3 - Shutdown initiated...
+2026-09-17 12:16:53 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-3 - Shutdown completed.
+2026-09-17 12:16:54 INFO  [repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-17 12:16:54 INFO  [repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interface.
+2026-09-17 12:16:54 INFO  [boot.tomcat.TomcatWebServer] - Tomcat initialized with port 8090 (http)
+2026-09-17 12:16:54 INFO  [coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8090"]
+2026-09-17 12:16:54 INFO  [catalina.core.StandardService] - Starting service [Tomcat]
+2026-09-17 12:16:54 INFO  [catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-17 12:16:54 INFO  [context.servlet.WebApplicationContextInitializer] - Root WebApplicationContext: initialization completed in 589 ms
+2026-09-17 12:16:54 INFO  [hibernate.orm.jpa] - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-17 12:16:54 INFO  [jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-17 12:16:54 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-4 - Starting...
+2026-09-17 12:16:54 INFO  [hikari.pool.HikariPool] - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5eaad2a4
+2026-09-17 12:16:54 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-4 - Start completed.
+2026-09-17 12:16:54 WARN  [hibernate.orm.deprecation] - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-17 12:16:54 INFO  [orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/DB_CALENDAR]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: DB_CALENDAR/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-17 12:16:54 WARN  [servlet.context.AnnotationConfigServletWebServerApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: com/office/calendar/member/jpa/AuthorityDto
+2026-09-17 12:16:54 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-4 - Shutdown initiated...
+2026-09-17 12:16:54 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-4 - Shutdown completed.
+2026-09-17 12:16:54 INFO  [catalina.core.StandardService] - Stopping service [Tomcat]
+2026-09-17 12:16:54 INFO  [autoconfigure.logging.ConditionEvaluationReportLogger] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-09-17 12:16:54 ERROR [springframework.boot.SpringApplication] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: com/office/calendar/member/jpa/AuthorityDto
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1815)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.office.calendar.CalendarApplication.main(CalendarApplication.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: java.lang.NoClassDefFoundError: com/office/calendar/member/jpa/AuthorityDto
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3404)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2506)
+	at org.hibernate.models.internal.jdk.JdkClassDetails.getMethods(JdkClassDetails.java:216)
+	at org.hibernate.boot.model.internal.InheritanceState.determineAccessTypeFromId(InheritanceState.java:304)
+	at org.hibernate.boot.model.internal.InheritanceState.determineDefaultAccessType(InheritanceState.java:261)
+	at org.hibernate.boot.model.internal.InheritanceState.getElementsToProcess(InheritanceState.java:232)
+	at org.hibernate.boot.model.internal.InheritanceState.postProcess(InheritanceState.java:165)
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:434)
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:259)
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:247)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:197)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:323)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.coordinateProcessors(MetadataBuildingProcess.java:356)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:209)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1388)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.populateSessionFactoryBuilder(EntityManagerFactoryBuilderImpl.java:1468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1450)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1811)
+	... 20 more
+Caused by: java.lang.ClassNotFoundException: com.office.calendar.member.jpa.AuthorityDto
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:469)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:123)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 45 more
+2026-09-17 12:16:56 INFO  [repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-17 12:16:56 INFO  [repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 9 ms. Found 2 JPA repository interfaces.
+2026-09-17 12:16:56 INFO  [boot.tomcat.TomcatWebServer] - Tomcat initialized with port 8090 (http)
+2026-09-17 12:16:56 INFO  [coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8090"]
+2026-09-17 12:16:56 INFO  [catalina.core.StandardService] - Starting service [Tomcat]
+2026-09-17 12:16:56 INFO  [catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-17 12:16:56 INFO  [context.servlet.WebApplicationContextInitializer] - Root WebApplicationContext: initialization completed in 317 ms
+2026-09-17 12:16:56 INFO  [hibernate.orm.jpa] - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-17 12:16:56 INFO  [jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-17 12:16:56 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-5 - Starting...
+2026-09-17 12:16:56 INFO  [hikari.pool.HikariPool] - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1367f238
+2026-09-17 12:16:56 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-5 - Start completed.
+2026-09-17 12:16:56 WARN  [hibernate.orm.deprecation] - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-17 12:16:56 INFO  [orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/DB_CALENDAR]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: DB_CALENDAR/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-17 12:16:56 INFO  [hibernate.orm.core] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-17 12:16:56 INFO  [orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-17 12:16:56 WARN  [jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-17 12:16:56 INFO  [authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name memberDetailsService
+2026-09-17 12:16:56 INFO  [coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8090"]
+2026-09-17 12:16:56 INFO  [boot.tomcat.TomcatWebServer] - Tomcat started on port 8090 (http) with context path '/'
+2026-09-17 12:16:56 INFO  [devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2026-09-17 12:23:12 INFO  [boot.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-17 12:23:13 INFO  [boot.tomcat.GracefulShutdown] - Graceful shutdown complete
+2026-09-17 12:23:13 INFO  [orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-17 12:23:13 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-5 - Shutdown initiated...
+2026-09-17 12:23:13 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-5 - Shutdown completed.
+2026-09-17 12:23:18 INFO  [devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-17 12:23:18 INFO  [devtools.env.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-17 12:23:19 INFO  [repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-17 12:23:19 INFO  [repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces.
+2026-09-17 12:23:20 INFO  [boot.tomcat.TomcatWebServer] - Tomcat initialized with port 8090 (http)
+2026-09-17 12:23:20 INFO  [coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8090"]
+2026-09-17 12:23:20 INFO  [catalina.core.StandardService] - Starting service [Tomcat]
+2026-09-17 12:23:20 INFO  [catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-17 12:23:20 INFO  [context.servlet.WebApplicationContextInitializer] - Root WebApplicationContext: initialization completed in 1598 ms
+2026-09-17 12:23:20 INFO  [hibernate.orm.jpa] - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-17 12:23:20 INFO  [hibernate.orm.core] - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-09-17 12:23:21 INFO  [jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-17 12:23:21 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2026-09-17 12:23:21 INFO  [hikari.pool.HikariPool] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d699ac
+2026-09-17 12:23:21 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2026-09-17 12:23:21 WARN  [hibernate.orm.deprecation] - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-17 12:23:21 INFO  [orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/DB_CALENDAR]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: DB_CALENDAR/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-17 12:23:22 INFO  [hibernate.orm.core] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-17 12:23:22 WARN  [schema.internal.ExceptionHandlerLoggedImpl] - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table user_member 
+       add constraint FK5yi94mub7yelh1efo6dm5k9f1 
+       foreign key (authority_no) 
+       references user_authority (no)" via JDBC [Referencing column 'authority_no' and referenced column 'no' in foreign key constraint 'FK5yi94mub7yelh1efo6dm5k9f1' are incompatible.]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table user_member 
+       add constraint FK5yi94mub7yelh1efo6dm5k9f1 
+       foreign key (authority_no) 
+       references user_authority (no)" via JDBC [Referencing column 'authority_no' and referenced column 'no' in foreign key constraint 'FK5yi94mub7yelh1efo6dm5k9f1' are incompatible.]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:91)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:566)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:506)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:438)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:256)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:96)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:269)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$1(SchemaManagementToolCoordinator.java:101)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:100)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:35)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:33)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:327)
+	at org.hibernate.internal.SessionFactoryRegistry.instantiateSessionFactory(SessionFactoryRegistry.java:64)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:458)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1452)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1811)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.office.calendar.CalendarApplication.main(CalendarApplication.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: java.sql.SQLException: Referencing column 'authority_no' and referenced column 'no' in foreign key constraint 'FK5yi94mub7yelh1efo6dm5k9f1' are incompatible.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:839)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:687)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:86)
+	... 42 more
+2026-09-17 12:23:22 INFO  [orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-17 12:23:23 INFO  [repository.query.QueryEnhancerFactories] - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-17 12:23:23 WARN  [jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-17 12:23:23 INFO  [authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name memberDetailsService
+2026-09-17 12:23:24 INFO  [coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8090"]
+2026-09-17 12:23:24 INFO  [boot.tomcat.TomcatWebServer] - Tomcat started on port 8090 (http) with context path '/'
+2026-09-17 12:23:33 INFO  [[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-17 12:23:33 INFO  [web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2026-09-17 12:23:33 INFO  [web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+2026-09-17 12:25:30 INFO  [devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-09-17 12:25:30 INFO  [boot.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-17 12:25:30 INFO  [coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8090"]
+2026-09-17 12:25:30 INFO  [boot.tomcat.GracefulShutdown] - Graceful shutdown complete
+2026-09-17 12:25:30 INFO  [coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8090"]
+2026-09-17 12:25:30 INFO  [orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-17 12:25:30 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+2026-09-17 12:25:30 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+2026-09-17 12:25:30 INFO  [repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-17 12:25:30 INFO  [repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 11 ms. Found 2 JPA repository interfaces.
+2026-09-17 12:25:31 INFO  [boot.tomcat.TomcatWebServer] - Tomcat initialized with port 8090 (http)
+2026-09-17 12:25:31 INFO  [coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8090"]
+2026-09-17 12:25:31 INFO  [catalina.core.StandardService] - Starting service [Tomcat]
+2026-09-17 12:25:31 INFO  [catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-17 12:25:31 INFO  [context.servlet.WebApplicationContextInitializer] - Root WebApplicationContext: initialization completed in 409 ms
+2026-09-17 12:25:31 INFO  [hibernate.orm.jpa] - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-17 12:25:31 INFO  [jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-17 12:25:31 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-2 - Starting...
+2026-09-17 12:25:31 INFO  [hikari.pool.HikariPool] - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@270b5a84
+2026-09-17 12:25:31 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-2 - Start completed.
+2026-09-17 12:25:31 WARN  [hibernate.orm.deprecation] - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-17 12:25:31 INFO  [orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/DB_CALENDAR]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: DB_CALENDAR/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-17 12:25:31 INFO  [hibernate.orm.core] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-17 12:25:31 WARN  [schema.internal.ExceptionHandlerLoggedImpl] - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table user_member 
+       add constraint FK5yi94mub7yelh1efo6dm5k9f1 
+       foreign key (authority_no) 
+       references user_authority (no)" via JDBC [Referencing column 'authority_no' and referenced column 'no' in foreign key constraint 'FK5yi94mub7yelh1efo6dm5k9f1' are incompatible.]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table user_member 
+       add constraint FK5yi94mub7yelh1efo6dm5k9f1 
+       foreign key (authority_no) 
+       references user_authority (no)" via JDBC [Referencing column 'authority_no' and referenced column 'no' in foreign key constraint 'FK5yi94mub7yelh1efo6dm5k9f1' are incompatible.]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:91)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:566)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:506)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:438)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:256)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:96)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:269)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$1(SchemaManagementToolCoordinator.java:101)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:100)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:35)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:33)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:327)
+	at org.hibernate.internal.SessionFactoryRegistry.instantiateSessionFactory(SessionFactoryRegistry.java:64)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:458)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1452)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1811)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.office.calendar.CalendarApplication.main(CalendarApplication.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: java.sql.SQLException: Referencing column 'authority_no' and referenced column 'no' in foreign key constraint 'FK5yi94mub7yelh1efo6dm5k9f1' are incompatible.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:839)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:687)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:86)
+	... 42 more
+2026-09-17 12:25:31 INFO  [orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-17 12:25:31 WARN  [jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-17 12:25:31 INFO  [authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name memberDetailsService
+2026-09-17 12:25:31 INFO  [coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8090"]
+2026-09-17 12:25:31 INFO  [boot.tomcat.TomcatWebServer] - Tomcat started on port 8090 (http) with context path '/'
+2026-09-17 12:25:31 INFO  [devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2026-09-17 12:26:13 INFO  [boot.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-17 12:26:13 INFO  [boot.tomcat.GracefulShutdown] - Graceful shutdown complete
+2026-09-17 12:26:13 INFO  [orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-17 12:26:13 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-2 - Shutdown initiated...
+2026-09-17 12:26:13 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-2 - Shutdown completed.
+2026-09-17 12:26:17 INFO  [devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-17 12:26:17 INFO  [devtools.env.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-17 12:26:18 INFO  [repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-17 12:26:18 INFO  [repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2026-09-17 12:26:18 INFO  [boot.tomcat.TomcatWebServer] - Tomcat initialized with port 8090 (http)
+2026-09-17 12:26:19 INFO  [coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8090"]
+2026-09-17 12:26:19 INFO  [catalina.core.StandardService] - Starting service [Tomcat]
+2026-09-17 12:26:19 INFO  [catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-17 12:26:19 INFO  [context.servlet.WebApplicationContextInitializer] - Root WebApplicationContext: initialization completed in 1573 ms
+2026-09-17 12:26:19 INFO  [hibernate.orm.jpa] - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-17 12:26:19 INFO  [hibernate.orm.core] - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-09-17 12:26:19 INFO  [jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-17 12:26:19 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2026-09-17 12:26:20 INFO  [hikari.pool.HikariPool] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75ff0845
+2026-09-17 12:26:20 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2026-09-17 12:26:20 WARN  [hibernate.orm.deprecation] - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-17 12:26:20 INFO  [orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/DB_CALENDAR]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: DB_CALENDAR/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-17 12:26:21 INFO  [hibernate.orm.core] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-17 12:26:21 WARN  [schema.internal.ExceptionHandlerLoggedImpl] - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table user_member 
+       add constraint FK5yi94mub7yelh1efo6dm5k9f1 
+       foreign key (authority_no) 
+       references user_authority (no)" via JDBC [Referencing column 'authority_no' and referenced column 'no' in foreign key constraint 'FK5yi94mub7yelh1efo6dm5k9f1' are incompatible.]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table user_member 
+       add constraint FK5yi94mub7yelh1efo6dm5k9f1 
+       foreign key (authority_no) 
+       references user_authority (no)" via JDBC [Referencing column 'authority_no' and referenced column 'no' in foreign key constraint 'FK5yi94mub7yelh1efo6dm5k9f1' are incompatible.]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:91)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:566)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:506)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:438)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:256)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:96)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:269)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$1(SchemaManagementToolCoordinator.java:101)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:100)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:35)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:33)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:327)
+	at org.hibernate.internal.SessionFactoryRegistry.instantiateSessionFactory(SessionFactoryRegistry.java:64)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:458)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1452)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1811)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.office.calendar.CalendarApplication.main(CalendarApplication.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: java.sql.SQLException: Referencing column 'authority_no' and referenced column 'no' in foreign key constraint 'FK5yi94mub7yelh1efo6dm5k9f1' are incompatible.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:839)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:687)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:86)
+	... 42 more
+2026-09-17 12:26:21 INFO  [orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-17 12:26:22 INFO  [repository.query.QueryEnhancerFactories] - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-17 12:26:22 WARN  [jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-17 12:26:22 INFO  [authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name memberDetailsService
+2026-09-17 12:26:23 INFO  [coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8090"]
+2026-09-17 12:26:23 INFO  [boot.tomcat.TomcatWebServer] - Tomcat started on port 8090 (http) with context path '/'
+2026-09-17 12:26:26 INFO  [[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-17 12:26:26 INFO  [web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2026-09-17 12:26:26 INFO  [web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+2026-09-17 12:30:03 INFO  [devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 22 class path changes (0 additions, 0 deletions, 22 modifications)
+2026-09-17 12:30:03 INFO  [boot.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-17 12:30:03 INFO  [coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8090"]
+2026-09-17 12:30:03 INFO  [boot.tomcat.GracefulShutdown] - Graceful shutdown complete
+2026-09-17 12:30:03 INFO  [coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8090"]
+2026-09-17 12:30:03 INFO  [orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-17 12:30:03 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+2026-09-17 12:30:03 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+2026-09-17 12:30:03 INFO  [repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-17 12:30:03 INFO  [repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2026-09-17 12:30:04 INFO  [boot.tomcat.TomcatWebServer] - Tomcat initialized with port 8090 (http)
+2026-09-17 12:30:04 INFO  [coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8090"]
+2026-09-17 12:30:04 INFO  [catalina.core.StandardService] - Starting service [Tomcat]
+2026-09-17 12:30:04 INFO  [catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-17 12:30:04 INFO  [context.servlet.WebApplicationContextInitializer] - Root WebApplicationContext: initialization completed in 390 ms
+2026-09-17 12:30:04 INFO  [hibernate.orm.jpa] - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-17 12:30:04 INFO  [jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-17 12:30:04 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-2 - Starting...
+2026-09-17 12:30:04 INFO  [hikari.pool.HikariPool] - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@683a1802
+2026-09-17 12:30:04 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-2 - Start completed.
+2026-09-17 12:30:04 WARN  [hibernate.orm.deprecation] - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-17 12:30:04 INFO  [orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/DB_CALENDAR]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: DB_CALENDAR/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-17 12:30:04 INFO  [hibernate.orm.core] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-17 12:30:04 WARN  [schema.internal.ExceptionHandlerLoggedImpl] - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table user_member 
+       add constraint FK5yi94mub7yelh1efo6dm5k9f1 
+       foreign key (authority_no) 
+       references user_authority (no)" via JDBC [Referencing column 'authority_no' and referenced column 'no' in foreign key constraint 'FK5yi94mub7yelh1efo6dm5k9f1' are incompatible.]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table user_member 
+       add constraint FK5yi94mub7yelh1efo6dm5k9f1 
+       foreign key (authority_no) 
+       references user_authority (no)" via JDBC [Referencing column 'authority_no' and referenced column 'no' in foreign key constraint 'FK5yi94mub7yelh1efo6dm5k9f1' are incompatible.]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:91)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:566)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:506)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:438)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:256)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:96)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:269)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$1(SchemaManagementToolCoordinator.java:101)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:100)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:35)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:33)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:327)
+	at org.hibernate.internal.SessionFactoryRegistry.instantiateSessionFactory(SessionFactoryRegistry.java:64)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:458)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1452)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1811)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.office.calendar.CalendarApplication.main(CalendarApplication.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: java.sql.SQLException: Referencing column 'authority_no' and referenced column 'no' in foreign key constraint 'FK5yi94mub7yelh1efo6dm5k9f1' are incompatible.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:839)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:687)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:86)
+	... 42 more
+2026-09-17 12:30:04 INFO  [orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-17 12:30:04 WARN  [jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-17 12:30:04 INFO  [authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name memberDetailsService
+2026-09-17 12:30:04 INFO  [coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8090"]
+2026-09-17 12:30:04 INFO  [boot.tomcat.TomcatWebServer] - Tomcat started on port 8090 (http) with context path '/'
+2026-09-17 12:30:04 INFO  [devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2026-09-17 12:30:07 INFO  [[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-17 12:30:07 INFO  [web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2026-09-17 12:30:07 INFO  [web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+2026-09-17 12:30:17 INFO  [devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 22 class path changes (0 additions, 0 deletions, 22 modifications)
+2026-09-17 12:30:17 INFO  [boot.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-17 12:30:17 INFO  [coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8090"]
+2026-09-17 12:30:17 INFO  [boot.tomcat.GracefulShutdown] - Graceful shutdown complete
+2026-09-17 12:30:17 INFO  [coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8090"]
+2026-09-17 12:30:17 INFO  [orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-17 12:30:17 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-2 - Shutdown initiated...
+2026-09-17 12:30:17 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-2 - Shutdown completed.
+2026-09-17 12:30:17 INFO  [repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-17 12:30:17 INFO  [repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 11 ms. Found 2 JPA repository interfaces.
+2026-09-17 12:30:18 INFO  [boot.tomcat.TomcatWebServer] - Tomcat initialized with port 8090 (http)
+2026-09-17 12:30:18 INFO  [coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8090"]
+2026-09-17 12:30:18 INFO  [catalina.core.StandardService] - Starting service [Tomcat]
+2026-09-17 12:30:18 INFO  [catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-17 12:30:18 INFO  [context.servlet.WebApplicationContextInitializer] - Root WebApplicationContext: initialization completed in 394 ms
+2026-09-17 12:30:18 INFO  [hibernate.orm.jpa] - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-17 12:30:18 INFO  [jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-17 12:30:18 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-3 - Starting...
+2026-09-17 12:30:18 INFO  [hikari.pool.HikariPool] - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@69cd1b5e
+2026-09-17 12:30:18 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-3 - Start completed.
+2026-09-17 12:30:18 WARN  [hibernate.orm.deprecation] - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-17 12:30:18 INFO  [orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/DB_CALENDAR]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: DB_CALENDAR/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-17 12:30:18 INFO  [hibernate.orm.core] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-17 12:30:18 WARN  [schema.internal.ExceptionHandlerLoggedImpl] - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table user_member 
+       add constraint FK5yi94mub7yelh1efo6dm5k9f1 
+       foreign key (authority_no) 
+       references user_authority (no)" via JDBC [Referencing column 'authority_no' and referenced column 'no' in foreign key constraint 'FK5yi94mub7yelh1efo6dm5k9f1' are incompatible.]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table user_member 
+       add constraint FK5yi94mub7yelh1efo6dm5k9f1 
+       foreign key (authority_no) 
+       references user_authority (no)" via JDBC [Referencing column 'authority_no' and referenced column 'no' in foreign key constraint 'FK5yi94mub7yelh1efo6dm5k9f1' are incompatible.]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:91)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:566)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:506)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:438)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:256)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:96)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:269)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$1(SchemaManagementToolCoordinator.java:101)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:100)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:35)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:33)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:327)
+	at org.hibernate.internal.SessionFactoryRegistry.instantiateSessionFactory(SessionFactoryRegistry.java:64)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:458)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1452)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1811)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.office.calendar.CalendarApplication.main(CalendarApplication.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: java.sql.SQLException: Referencing column 'authority_no' and referenced column 'no' in foreign key constraint 'FK5yi94mub7yelh1efo6dm5k9f1' are incompatible.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:839)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:687)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:86)
+	... 42 more
+2026-09-17 12:30:18 INFO  [orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-17 12:30:18 WARN  [jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-17 12:30:18 INFO  [authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name memberDetailsService
+2026-09-17 12:30:18 INFO  [coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8090"]
+2026-09-17 12:30:18 INFO  [boot.tomcat.TomcatWebServer] - Tomcat started on port 8090 (http) with context path '/'
+2026-09-17 12:30:18 INFO  [[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-17 12:30:18 INFO  [web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2026-09-17 12:30:18 INFO  [web.servlet.DispatcherServlet] - Completed initialization in 2 ms
+2026-09-17 12:30:18 INFO  [devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2026-09-17 12:31:58 INFO  [boot.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-17 12:31:59 INFO  [boot.tomcat.GracefulShutdown] - Graceful shutdown complete
+2026-09-17 12:31:59 INFO  [orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-17 12:31:59 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-3 - Shutdown initiated...
+2026-09-17 12:31:59 INFO  [zaxxer.hikari.HikariDataSource] - HikariPool-3 - Shutdown completed.

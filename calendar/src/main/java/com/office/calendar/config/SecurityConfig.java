@@ -47,12 +47,12 @@ public class SecurityConfig {
                         .loginPage("/member/signin")
                         .loginProcessingUrl("/member/signin_confirm")
                         .usernameParameter("id")
-                        .usernameParameter("pw")
+                        .passwordParameter("pw")
                         .successHandler((request, response, authentication) -> {
                             log.info("SIGNIN SUCCESS HANDLER()");
 
                             User user = (User) authentication.getPrincipal();
-                            String targetURI = "/member/signin_result?logininedID=" + user.getUsername();
+                            String targetURI = "/member/signin_result?loginedID=" + user.getUsername();
                             response.sendRedirect(targetURI);
 
                         })

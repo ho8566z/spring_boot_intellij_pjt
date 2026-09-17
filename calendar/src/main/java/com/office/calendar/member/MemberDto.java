@@ -1,5 +1,6 @@
 package com.office.calendar.member;
 
+import com.office.calendar.member.jpa.AuthorityDto;
 import com.office.calendar.member.jpa.MemberEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -20,7 +21,8 @@ public class MemberDto {
     private String pw;
     private String mail;
     private String phone;
-    private int authority_no;
+//    private int authority_no;
+    private AuthorityDto authorityDto;
     private String reg_date;
     private String mod_date;
 
@@ -34,7 +36,8 @@ public class MemberDto {
                 .memPw(pw)
                 .memMail(mail)
                 .memPhone(phone)
-                .memAuthorityNo(authority_no)
+//                .memAuthorityNo(authority_no)
+                .authorityEntity(authorityDto != null ? authorityDto.toEntity() : null)
                 .memRegDate(reg_date != null ? LocalDateTime.parse(reg_date,formatter) : null)
                 .memModDate(mod_date != null ? LocalDateTime.parse(mod_date,formatter) : null)
                 .build();
