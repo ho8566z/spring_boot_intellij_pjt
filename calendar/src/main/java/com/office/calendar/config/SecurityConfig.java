@@ -25,6 +25,22 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf.disable());
 
         http
+                .authorizeHttpRequests(auth -> auth
+                        .requestMatchers(
+                                "/",
+                                "/css",
+                                "/img",
+                                "/js",
+                                "/member/signup",
+                                "/member/signup_confirm",
+                                "/member/signin",
+                                "/member/signin_confirm",
+                                "/member/findpassword",
+                                "/member/findpassword_confirm")
+                        .permitAll()
+                        .anyRequest().authenticated());
+
+        http
                 .formLogin(login -> login.disable());
 
         return http.build();

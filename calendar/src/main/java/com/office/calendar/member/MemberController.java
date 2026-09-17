@@ -31,7 +31,7 @@ public class MemberController {
     }
 
     // 회원가입 확인
-    @PostMapping("signup_confirm")
+    @PostMapping("/signup_confirm")
     public String signupConfirm(MemberDto memberDto, Model model) {
         System.out.println(CLASS_NAME.concat("signupConfirm()"));
 
