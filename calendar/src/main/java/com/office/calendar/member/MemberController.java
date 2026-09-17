@@ -1,12 +1,16 @@
 package com.office.calendar.member;
 
+import jakarta.persistence.GeneratedValue;
 import jakarta.servlet.http.HttpSession;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
+@Slf4j
 @Controller
 @RequestMapping("/member")
 public class MemberController {
@@ -55,6 +59,7 @@ public class MemberController {
 
     }
 
+    /*
     // 로그인 확인 /signin_confirm
     @PostMapping("/signin_confirm")
     public String signinConfirm(MemberDto memberDto,
@@ -73,9 +78,10 @@ public class MemberController {
         }
 
         return nextPage;
-
     }
+     */
 
+    /*
     // 로그 아웃 /signout_confirm
     @GetMapping("/signout_confirm")
     public String signoutConfirm(HttpSession session) {
@@ -86,8 +92,8 @@ public class MemberController {
         session.invalidate();
 
         return nextPage;
-
     }
+     */
 
     // 계정 수정 양식(/member/modify)
     @GetMapping("/modify")
@@ -141,6 +147,19 @@ public class MemberController {
 
         return nextPage;
 
+    }
+
+    //
+    @GetMapping("/signin_result")
+    public String signinResult(
+            @RequestParam(value = "logininedID", required = false) String logininedID,
+            Model model) {
+        log.info(CLASS_NAME.concat("signinResult()"));
+
+        String nextPage = "member/signin_result";
+        model.addAttribute("logininedID", logininedID);
+
+        return nextPage;
     }
 
 }

@@ -1,5 +1,6 @@
 package com.office.calendar.config;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -9,6 +10,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
+@Slf4j
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
@@ -28,9 +30,9 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(
                                 "/",
-                                "/css",
-                                "/img",
-                                "/js",
+                                "/css/*",
+                                "/img/*",
+                                "/js/*",
                                 "/member/signup",
                                 "/member/signup_confirm",
                                 "/member/signin",
@@ -41,7 +43,38 @@ public class SecurityConfig {
                         .anyRequest().authenticated());
 
         http
-                .formLogin(login -> login.disable());
+                .formLogin(login -> login
+                        .loginPage("/member/signin")
+                        .loginProcessingUrl("/member/signin_confirm")
+                        .usernameParameter("id")
+                        .usernameParameter("pw")
+                        .successHandler((request, response, authentication) -> {
+                            log.info("SIGNIN SUCCESS HANDLER()");
+
+                            User user = (User) authentication.getPrincipal();
+                            String targetURI = "/member/signin_result?logininedID=" + user.getUsername();
+                            response.sendRedirect(targetURI);
+
+                        })
+                        .failureHandler((request, response, exception) -> {
+                            log.info("SIGNIN FAIL HANDLER()");
+
+                            String targetURI = "/member/signin_result";
+                            response.sendRedirect(targetURI);
+
+                        })
+                );
+
+        http
+                .logout(logout -> logout
+                        .logoutUrl("/member/signout_confirm")
+                        .logoutSuccessHandler((request, response, authentication) -> {
+                            log.info("SIGNOUT SUCCESS HANDLER()");
+
+                            String targetURI = "/";
+                            response.sendRedirect(targetURI);
+
+                        }));
 
         return http.build();
 
