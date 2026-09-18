@@ -1,5 +1,6 @@
 package com.office.calendar.member;
 
+import com.office.calendar.member.jpa.AuthorityEntity;
 import com.office.calendar.member.jpa.MemberEntity;
 import com.office.calendar.member.jpa.MemberRepository;
 import com.office.calendar.member.mapper.MemberMapper;
@@ -41,6 +42,7 @@ public class MemberService {
     }
 
 
+    @Transactional
     public int signupConfirm(MemberDto memberDto) {
         log.info("signupConfirm()");
 
@@ -52,9 +54,15 @@ public class MemberService {
 
             MemberEntity savedMemberEntity = memberRepository.save(memberDto.toEntity());
 
-            if (savedMemberEntity != null)
+            if (savedMemberEntity != null) {
+                if (savedMemberEntity.getMemId().equals("superadmin")) {
+                    savedMemberEntity.setAuthorityEntity(AuthorityEntity.builder()
+                            .authNo((byte) 3)
+                            .authRoleName("SUPER_ADMIN")
+                            .build());
+                }
                 return USER_SIGNUP_SUCCESS;
-            else
+            } else
                 return USER_SIGNUP_FAIL;
 
         } else {

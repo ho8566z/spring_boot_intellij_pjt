@@ -28,6 +28,11 @@ public class MemberDetailsService implements UserDetailsService {
         Optional<MemberEntity> optionalMember = memberRepository.findByMemId(username);
         if (optionalMember.isPresent()) {
             MemberEntity findMemberEntity = optionalMember.get();
+
+            if (findMemberEntity.getAuthorityEntity().getAuthNo() == 1) {
+                return null;
+            }
+
             return User.builder()
                     .username(findMemberEntity.getMemId())
                     .password(findMemberEntity.getMemPw())

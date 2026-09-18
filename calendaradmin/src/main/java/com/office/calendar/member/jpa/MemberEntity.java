@@ -23,7 +23,6 @@ public class MemberEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int memNo;
 
-//    @Column(name = "ID", nullable = false, length = 20, unique = true)
     @Column(name = "ID", nullable = false, length = 20)
     private String memId;
 

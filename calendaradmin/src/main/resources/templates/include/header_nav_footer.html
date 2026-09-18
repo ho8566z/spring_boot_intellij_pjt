@@ -25,8 +25,9 @@
 <nav th:fragment="nav">
     <div id="nav_wrap">
         <th:block sec:authorize="hasAnyRole('SUPER_ADMIN')">
-            <a th:href="@{/user/list}">user-list</a>
+            <a th:href="@{/admin/list}">admin-list</a>
         </th:block>
+        <a th:href="@{/user/list}">user-list</a>
     </div>
 </nav>
 
