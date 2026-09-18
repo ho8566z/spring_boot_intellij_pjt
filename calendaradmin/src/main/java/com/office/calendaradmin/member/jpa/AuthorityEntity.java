@@ -1,4 +1,4 @@
-package com.office.calendar.member.jpa;
+package com.office.calendaradmin.member.jpa;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

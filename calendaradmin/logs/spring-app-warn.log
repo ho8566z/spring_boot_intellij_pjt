@@ -18,3 +18,7 @@
 2026-09-18 09:44:51 WARN  [office.calendar.HomeController] - WARN:: home()
 2026-09-18 10:03:16 WARN  [office.calendar.HomeController] - WARN:: home()
 2026-09-18 10:03:25 WARN  [office.calendar.HomeController] - WARN:: home()
+2026-09-18 12:26:30 WARN  [office.calendaradmin.HomeController] - WARN:: home()
+2026-09-18 12:37:03 WARN  [office.calendaradmin.HomeController] - WARN:: home()
+2026-09-18 12:38:47 WARN  [office.calendaradmin.HomeController] - WARN:: home()
+2026-09-18 12:43:20 WARN  [office.calendaradmin.HomeController] - WARN:: home()

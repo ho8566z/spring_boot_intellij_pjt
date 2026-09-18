@@ -1,6 +1,6 @@
-package com.office.calendar.config;
+package com.office.calendaradmin.config;
 
-import com.office.calendar.member.MemberSigninInterceptor;
+import com.office.calendaradmin.member.MemberSigninInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;

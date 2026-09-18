@@ -1,4 +1,4 @@
-package com.office.calendar.member.jpa;
+package com.office.calendaradmin.member.jpa;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

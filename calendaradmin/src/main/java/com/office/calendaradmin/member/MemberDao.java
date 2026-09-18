@@ -1,6 +1,5 @@
-package com.office.calendar.member;
+package com.office.calendaradmin.member;
 
-import org.jspecify.annotations.Nullable;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;

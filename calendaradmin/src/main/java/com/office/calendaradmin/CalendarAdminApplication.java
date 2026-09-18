@@ -1,15 +1,14 @@
-package com.office.calendar;
+package com.office.calendaradmin;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CalendarApplication {
+public class CalendarAdminApplication {
 
 	public static void main(String[] args) {
 
-		SpringApplication.run(CalendarApplication.class, args);
+		SpringApplication.run(CalendarAdminApplication.class, args);
 
 	}
 

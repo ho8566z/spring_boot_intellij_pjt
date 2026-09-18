@@ -1,6 +1,6 @@
-package com.office.calendar.member.mapper;
+package com.office.calendaradmin.member.mapper;
 
-import com.office.calendar.member.MemberDto;
+import com.office.calendaradmin.member.MemberDto;
 import org.apache.ibatis.annotations.*;
 
 @Mapper

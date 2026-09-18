@@ -1,4 +1,4 @@
-package com.office.calendar;
+package com.office.calendaradmin;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

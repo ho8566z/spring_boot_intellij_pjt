@@ -1,7 +1,7 @@
-package com.office.calendar.member;
+package com.office.calendaradmin.member;
 
-import com.office.calendar.member.jpa.AuthorityDto;
-import com.office.calendar.member.jpa.MemberEntity;
+import com.office.calendaradmin.member.jpa.AuthorityDto;
+import com.office.calendaradmin.member.jpa.MemberEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

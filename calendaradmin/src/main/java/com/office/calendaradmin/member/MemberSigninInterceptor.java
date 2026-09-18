@@ -1,4 +1,4 @@
-package com.office.calendar.member;
+package com.office.calendaradmin.member;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

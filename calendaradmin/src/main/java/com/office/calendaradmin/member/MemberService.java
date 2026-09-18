@@ -1,10 +1,8 @@
-package com.office.calendar.member;
+package com.office.calendaradmin.member;
 
-import com.office.calendar.member.jpa.AuthorityEntity;
-import com.office.calendar.member.jpa.MemberEntity;
-import com.office.calendar.member.jpa.MemberRepository;
-import com.office.calendar.member.mapper.MemberMapper;
-import lombok.RequiredArgsConstructor;
+import com.office.calendaradmin.member.jpa.AuthorityEntity;
+import com.office.calendaradmin.member.jpa.MemberEntity;
+import com.office.calendaradmin.member.jpa.MemberRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;

@@ -1,7 +1,7 @@
-package com.office.calendar.member.security;
+package com.office.calendaradmin.member.security;
 
-import com.office.calendar.member.jpa.MemberEntity;
-import com.office.calendar.member.jpa.MemberRepository;
+import com.office.calendaradmin.member.jpa.MemberEntity;
+import com.office.calendaradmin.member.jpa.MemberRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;

@@ -3,7 +3,7 @@
 <configuration>
 
     <typeAliases>
-        <typeAlias type="com.office.calendar.member.MemberDto" alias="MemberDto" />
+        <typeAlias type="com.office.calendaradmin.member.MemberDto" alias="MemberDto" />
     </typeAliases>
 
 </configuration>
