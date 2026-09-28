@@ -92,3 +92,36 @@ async function fetchGetCurrentMonthPlans() {
     }
 
 }
+
+async function fetchGetPlan(no) {
+    console.log("fetchGetPlan() CALLED!!");
+
+    let queryString = new URLSearchParams({"no": no}).toString();
+    console.log("queryString: ", queryString);
+
+    try {
+        let response = await fetch(`/planner/plan?${queryString}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json; charset=utf-8'
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+
+        console.log('fetchGetPlan() COMMUNICATION SUCCESS!! ');
+
+        let data = await response.json();
+        console.log('data: ', data);
+
+        let plan = data.plan;
+        showDetailPlanView(plan);
+
+    } catch (error) {
+        console.log('fetchGetPlan() COMMUNICATION ERROR!! ', error);
+
+    }
+
+}

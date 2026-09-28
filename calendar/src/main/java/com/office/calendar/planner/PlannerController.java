@@ -75,4 +75,17 @@ public class PlannerController {
 
     }
 
+    // 일정 가져오기
+    @GetMapping("/plan")
+    public ResponseEntity<Map<String, Object>> getPlan(
+            @RequestParam Map<String, Object> reqData
+    ) {
+        log.info("getPlan()");
+
+        Map<String, Object> resultMap = plannerService.getPlan(reqData);
+
+        return ResponseEntity.ok(resultMap);
+
+    }
+
 }

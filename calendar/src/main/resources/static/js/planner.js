@@ -208,6 +208,14 @@ function initEvents() {
 
         }
 
+        // 일정 디테일 모달 보이기
+        if (event.target.matches('#table_calender a.title')) {
+            console.log('PLAN TITLE CLICKED!!', event.target.getAttribute('data-no'));
+
+            fetchGetPlan(event.target.getAttribute('data-no'));
+
+        }
+
     });
 
     // change 이벤트 들 처리
@@ -413,5 +421,29 @@ function setSelectDateOptions(year, month, select_name) {   // 2026 9
         option.textContent = i;
         selectElement.appendChild(option);
     }
+}
+
+function showDetailPlanView(plan) {
+    console.log('showDetailPlanView() CALLED!!');
+
+    let showPlan = document.querySelector('#show_plan');
+
+    showPlan.querySelector('select[name="dp_year"]').value = plan.year;
+    showPlan.querySelector('select[name="dp_month"]').value = plan.month;
+
+    setSelectDateOptions(plan.year, plan.month, "dp_date");
+    showPlan.querySelector('select[name="dp_date"]').value = plan.date;
+
+    showPlan.querySelector('input[name="p_title"]').value = plan.title;
+    showPlan.querySelector('input[name="p_body"]').value = plan.body;
+
+    let uploadImgURI = `/planUploadImg/${plan.ori_owner_id}/${plan.img_name}`;
+    showPlan.querySelector('img.plan_img').src = uploadImgURI;
+
+    showPlan.querySelectorAll("input").forEach(input => input.dataset.no = plan.no);
+    showPlan.dataset.ori_no = plan.ori_no;
+
+    showPlan.style.display = "block";
+
 }
 

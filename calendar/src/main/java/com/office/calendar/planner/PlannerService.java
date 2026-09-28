@@ -68,4 +68,18 @@ public class PlannerService {
         return resultMap;
 
     }
+
+    public Map<String, Object> getPlan(Map<String, Object> reqData) {
+        log.info("getPlan()");
+
+        Map<String, Object> resultMap = new HashMap<>();
+
+        PlannerDto plannerDto =
+                plannerRepository.findByPlanNo(Integer.valueOf(String.valueOf(reqData.get("no")))).toDto();
+
+        resultMap.put("plan", plannerDto);
+
+        return resultMap;
+
+    }
 }
