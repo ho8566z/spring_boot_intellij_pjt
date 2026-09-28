@@ -23,6 +23,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // 현재 (<tr> UI)
     addCalenderTr();
 
+    // 해당 년/월 일정들 가져오기
+    fetchGetCurrentMonthPlans();
+
     // 이벤트 핸들러 등록
     initEvents();
 
@@ -102,6 +105,17 @@ function addCalenderTr() {
                 writeLink.textContent = 'write';
                 writeDiv.appendChild(writeLink);
                 td.appendChild(writeDiv);
+
+                // 일정 출력 UI
+                let planWrap = document.createElement('div');
+                planWrap.className = 'plan_wrap';
+                planWrap.id = `date_${dates[dateIndex]}`;
+
+                let planList = document.createElement('ul');
+                planList.className = 'plan';
+                planWrap.appendChild(planList);
+                td.appendChild(planWrap);
+
             }
 
             tr.appendChild(td);
@@ -182,10 +196,10 @@ function initEvents() {
 
             } else {
                 let inputFile = document.querySelector('#write_plan input[name="p_file"]');
-                console.log('inputFile', inputFile);
+                console.log('inputFile: ', inputFile);
 
                 let files = inputFile.files;
-                console.log('files', files);
+                console.log('files: ', files);
 
                 // 비동기 방식으로 서버에 전송
                 fetchWritePlan(year, month, date, title, body, files[0]);
@@ -272,6 +286,9 @@ function setPreMonth() {
     // UI(<tr>) 렌더링
     addCalenderTr();
 
+    // 해당 년/월 일정들 가져오기
+    fetchGetCurrentMonthPlans();
+
 }
 
 function setNextMonth() {
@@ -312,6 +329,9 @@ function setNextMonth() {
     // UI(<tr>) 렌더링
     addCalenderTr();
 
+    // 해당 년/월 일정들 가져오기
+    fetchGetCurrentMonthPlans();
+
 }
 
 function removeCalenderTr() {
@@ -341,6 +361,9 @@ function setMonthBySelectChanged() {
     // 달력 UI 렌더링
     removeCalenderTr();
     addCalenderTr();
+
+    // 해당 년/월 일정들 가져오기
+    fetchGetCurrentMonthPlans();
 
 }
 
@@ -392,40 +415,3 @@ function setSelectDateOptions(year, month, select_name) {   // 2026 9
     }
 }
 
-async function fetchWritePlan(year, month, date, title, body, file) {
-    console.log('fetchWritePlan() CALLED!!');
-
-    let formData = new FormData();
-    formData.append("year", year);
-    formData.append("month", month);
-    formData.append("date", date);
-    formData.append("title", title);
-    formData.append("body", body);
-    formData.append("file", file);
-
-    try {
-        let response = await fetch('/planner/plan', {
-            method: 'POST',
-            body:formData
-        });
-
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-
-        console.log('fetchWritePlan() COMMUNICATION SUCCESS!!');
-
-        let data = await response.json();
-        console.log('data : ', data);
-
-        if (!data || data.result <= 0) {
-            alert
-        })
-
-    } catch (error) {
-        console.log('fetchWritePlan() COMMUNICATION ERROR!!', error);
-        alert('일정 문제가 발생 했습니다.')
-    }
-
-
-}
