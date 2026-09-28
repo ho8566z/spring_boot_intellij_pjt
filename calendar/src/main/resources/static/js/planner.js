@@ -216,6 +216,26 @@ function initEvents() {
 
         }
 
+        // 일정 디테일 모달 닫기
+        if (event.target.matches('#show_plan input[value="CLOSE"]')) {
+            console.log('CLOSE BUTTON CLICKED!!');
+
+            hideDetailPlanView();
+
+        }
+
+        // 일정 삭제 버튼 클릭 시
+        if (event.target.matches('#show_plan input[value="DELETE"]')) {
+            console.log('DELETE BUTTON CLICKED!!');
+
+            let no = event.target.getAttribute("data-no");
+            console.log('no: ', no);
+
+            fetchRemovePlan(no);
+
+        }
+
+
     });
 
     // change 이벤트 들 처리
@@ -444,6 +464,20 @@ function showDetailPlanView(plan) {
     showPlan.dataset.ori_no = plan.ori_no;
 
     showPlan.style.display = "block";
+
+}
+
+function hideDetailPlanView() {
+    console.log("hideDetailPlanView() CALLED!!");
+
+    // let showPlan = document.getElementById('show_plan');
+    let showPlan = document.querySelector('#show_plan');
+
+    showPlan.querySelector('input[name="p_title"]').value = '';
+    showPlan.querySelector('input[name="p_body"]').value = '';
+    showPlan.querySelector('input[name="p_file"]').value = '';
+
+    showPlan.style.display = 'none';
 
 }
 

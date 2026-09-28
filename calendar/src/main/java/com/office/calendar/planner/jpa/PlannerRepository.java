@@ -10,4 +10,6 @@ public interface PlannerRepository extends JpaRepository<PlannerEntity, Integer>
 
     PlannerEntity findByPlanNo(int planNo);
 
+    int deleteByPlanNo(int planNo);
+
 }

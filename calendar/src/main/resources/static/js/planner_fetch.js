@@ -125,3 +125,45 @@ async function fetchGetPlan(no) {
     }
 
 }
+
+async function fetchRemovePlan(no) {
+    console.log('fetchRemovePlan() CALLED!!');
+
+    try {
+        let response = await fetch(`/planner/plan/${no}`, {   // /planner/plan/2
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json; charset=utf-8'
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+
+        console.log('fetchRemovePlan() COMMUNICATION SUCCESS!! ');
+
+        let data = await response.json();
+        console.log('data: ', data);
+
+        if (data.result > 0) {
+            alert("일정이 정상적으로 삭제 되었습니다.");
+
+            removeCalenderTr();
+            addCalenderTr();
+            fetchGetCurrentMonthPlans();
+
+        } else {
+            alert("일정이 정상적으로 삭제 되지 않았습니다.");
+
+        }
+
+    } catch (error) {
+        console.log('fetchRemovePlan() COMMUNICATION ERROR!! ', error);
+
+    } finally {
+        hideDetailPlanView();
+
+    }
+
+}

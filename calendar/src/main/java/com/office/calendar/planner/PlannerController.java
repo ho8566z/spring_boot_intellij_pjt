@@ -5,10 +5,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.security.Principal;
@@ -83,6 +80,17 @@ public class PlannerController {
         log.info("getPlan()");
 
         Map<String, Object> resultMap = plannerService.getPlan(reqData);
+
+        return ResponseEntity.ok(resultMap);
+
+    }
+
+    // 일정 삭제하기
+    @DeleteMapping("/plan/{no}")
+    public ResponseEntity<Map<String, Object>> removePlan(@PathVariable("no") int no) {
+        log.info("removePlan()");
+
+        Map<String, Object> resultMap = plannerService.removePlan(no);
 
         return ResponseEntity.ok(resultMap);
 

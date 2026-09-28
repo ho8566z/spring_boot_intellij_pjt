@@ -5,6 +5,7 @@ import com.office.calendar.planner.jpa.PlannerRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.HashMap;
 import java.util.List;
@@ -18,6 +19,9 @@ public class PlannerService {
 
     final public int PLAN_REGISTE_SUCCESS = 1;
     final public int PLAN_REGISTE_FAIL = 0;
+
+    final public int PLAN_REMOVE_SUCCESS = 1;
+    final public int PLAN_REMOVE_FAIL = 0;
 
     final private PlannerRepository plannerRepository;
 
@@ -78,6 +82,27 @@ public class PlannerService {
                 plannerRepository.findByPlanNo(Integer.valueOf(String.valueOf(reqData.get("no")))).toDto();
 
         resultMap.put("plan", plannerDto);
+
+        return resultMap;
+
+    }
+
+    @Transactional
+    public Map<String, Object> removePlan(int no) {
+        log.info("removePlan()");
+
+        Map<String, Object> resultMap = new HashMap<>();
+
+        int result = plannerRepository.deleteByPlanNo(no);
+        if (result > PLAN_REMOVE_FAIL) {
+            log.info("REMOVE PLAN SUCCESS!!");
+
+        } else {
+            log.info("REMOVE PLAN FAIL!!");
+
+        }
+
+        resultMap.put("result", result);
 
         return resultMap;
 
