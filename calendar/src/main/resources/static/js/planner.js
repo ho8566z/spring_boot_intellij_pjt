@@ -418,6 +418,10 @@ async function fetchWritePlan(year, month, date, title, body, file) {
         let data = await response.json();
         console.log('data : ', data);
 
+        if (!data || data.result <= 0) {
+            alert
+        })
+
     } catch (error) {
         console.log('fetchWritePlan() COMMUNICATION ERROR!!', error);
         alert('일정 문제가 발생 했습니다.')

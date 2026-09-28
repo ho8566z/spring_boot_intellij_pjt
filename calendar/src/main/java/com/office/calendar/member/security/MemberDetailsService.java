@@ -23,7 +23,7 @@ public class MemberDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        log.info("[MemberDetailsService] loadUserByUsername()");
+        log.info("loadUserByUsername()");
 
         Optional<MemberEntity> optionalMember = memberRepository.findByMemId(username);
         if (optionalMember.isPresent()) {
