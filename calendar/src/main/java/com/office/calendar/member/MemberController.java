@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.security.Principal;
+
 @Slf4j
 @Controller
 @RequestMapping("/member")
@@ -97,12 +99,12 @@ public class MemberController {
 
     // 계정 수정 양식(/member/modify)
     @GetMapping("/modify")
-    public String modify(HttpSession session, Model model) {
+    public String modify(Principal principal, Model model) {
         System.out.println(CLASS_NAME.concat("modify()"));
 
         String nextPage = "member/modify_form";
 
-        String loginedID = String.valueOf(session.getAttribute("loginedID"));
+        String loginedID = principal.getName();
         MemberDto loginedMemberDto = memberService.modify(loginedID);
         model.addAttribute("loginedMemberDto", loginedMemberDto);
 

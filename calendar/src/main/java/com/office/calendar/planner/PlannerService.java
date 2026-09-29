@@ -29,6 +29,7 @@ public class PlannerService {
     final private PlannerRepository plannerRepository;
 
     // 일정 등록
+    @Transactional
     public Map<String, Object> writePlan(PlannerDto plannerDto) {
         log.info("writePlan()");
 
@@ -55,16 +56,13 @@ public class PlannerService {
 
     }
 
-    public Map<String, Object> getPlans(Map<String, Object> reqData) {
+    public Map<String, Object> getPlans(int year, int month, String ownerId) {
         log.info("getPlans()");
 
         Map<String, Object> resultMap = new HashMap<>();
 
-        List<PlannerEntity> plannerEntities = plannerRepository.findByPlanYearAndPlanMonthAndPlanOwnerId(
-                Integer.valueOf(String.valueOf(reqData.get("year"))),
-                Integer.valueOf(String.valueOf(reqData.get("month"))),
-                String.valueOf(reqData.get("owner_id"))
-        );
+        List<PlannerEntity> plannerEntities =
+                plannerRepository.findByPlanYearAndPlanMonthAndPlanOwnerId(year, month, ownerId);
 
         List<PlannerDto> plannerDtos = plannerEntities.stream()
                 .map(PlannerEntity::toDto)
@@ -76,15 +74,14 @@ public class PlannerService {
 
     }
 
-    public Map<String, Object> getPlan(Map<String, Object> reqData) {
+    public Map<String, Object> getPlan(int no) {
         log.info("getPlan()");
 
         Map<String, Object> resultMap = new HashMap<>();
 
-        PlannerDto plannerDto =
-                plannerRepository.findByPlanNo(Integer.valueOf(String.valueOf(reqData.get("no")))).toDto();
+        PlannerEntity plannerEntity = plannerRepository.findByPlanNo(no);
 
-        resultMap.put("plan", plannerDto);
+        resultMap.put("plan", plannerEntity != null ? plannerEntity.toDto() : null);
 
         return resultMap;
 

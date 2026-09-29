@@ -61,12 +61,12 @@ public class PlannerController {
     // 일정들 가져오기
     @GetMapping("/plans")
     public ResponseEntity<Map<String, Object>> getPlans(
-            @RequestParam Map<String, Object> reqData,
+            @RequestParam("year") int year,
+            @RequestParam("month") int month,
             Principal principal) {
         log.info("getPlans()");
 
-        reqData.put("owner_id", principal.getName());
-        Map<String, Object> resultMap = plannerService.getPlans(reqData);
+        Map<String, Object> resultMap = plannerService.getPlans(year, month, principal.getName());
 
         return ResponseEntity.ok(resultMap);
 
@@ -75,11 +75,15 @@ public class PlannerController {
     // 일정 가져오기
     @GetMapping("/plan")
     public ResponseEntity<Map<String, Object>> getPlan(
-            @RequestParam Map<String, Object> reqData
+            @RequestParam("no") int no
     ) {
         log.info("getPlan()");
 
-        Map<String, Object> resultMap = plannerService.getPlan(reqData);
+        Map<String, Object> resultMap = plannerService.getPlan(no);
+        if (resultMap.get("plan") == null) {
+            return ResponseEntity.notFound().build();      // 404 NOT FOUND
+
+        }
 
         return ResponseEntity.ok(resultMap);
 

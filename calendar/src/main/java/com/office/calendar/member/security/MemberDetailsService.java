@@ -35,7 +35,7 @@ public class MemberDetailsService implements UserDetailsService {
                     .build();
         }
 
-        return null;
+        throw new UsernameNotFoundException(username);
 
     }
 

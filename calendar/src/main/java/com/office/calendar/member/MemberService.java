@@ -254,8 +254,6 @@ public class MemberService {
                 stringBuffer.append(String.valueOf(chars[index]).toLowerCase());
         }
 
-        System.out.println("[MemberService] NEW PASSWORD: " + stringBuffer.toString());
-
         return stringBuffer.toString();
 
     }
@@ -264,8 +262,7 @@ public class MemberService {
         System.out.println("[MemberService] sendNewPasswordByMail()");
 
         SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
-        // simpleMailMessage.setTo(toMailAddr);
-        simpleMailMessage.setTo("nikecafe@naver.com");
+        simpleMailMessage.setTo(toMailAddr);
         simpleMailMessage.setSubject("[MyCalendar] 새 비밀번호 안내입니다.");
         simpleMailMessage.setText("새 비밀번호: " + newPassword);
         simpleMailMessage.setFrom("hohasic@gmail.com");

@@ -16,16 +16,23 @@ public class UploadFileService {
 
         boolean result = false;
 
+        if (file == null || file.isEmpty()) {
+            log.info("FILE UPLOAD FAIL!! (EMPTY FILE)");
+            return null;
+        }
+
         String fileOriName = file.getOriginalFilename(); // abc.jpg
-        String fileExtension = fileOriName.substring(fileOriName.lastIndexOf("."), fileOriName.length()); // .jpg
+        int dotIndex = fileOriName != null ? fileOriName.lastIndexOf(".") : -1;
+        String fileExtension = dotIndex >= 0 ? fileOriName.substring(dotIndex) : ""; // .jpg (확장자 없으면 "")
         String uploadDir = "c:\\calendar\\upload\\" + id;
 
         UUID uuid = UUID.randomUUID();      // afawer-lui34q-23asdf
         String uniqueFileName = uuid.toString().replaceAll("-", "");    // afawerlui34q23asdf
 
         File saveFile = new File(uploadDir + "\\" + uniqueFileName + fileExtension); //afawerlui34q23asdf.jpg
-        if (!saveFile.exists())
-            saveFile.mkdirs();
+        File saveDir = saveFile.getParentFile();
+        if (!saveDir.exists())
+            saveDir.mkdirs();
 
         try {
 
