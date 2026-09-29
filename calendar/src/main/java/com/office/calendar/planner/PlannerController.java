@@ -102,7 +102,8 @@ public class PlannerController {
             @PathVariable("no") int no,
             PlannerDto plannerDto,
             @RequestParam(value = "file", required = false) MultipartFile file,
-            Principal principal) {
+            Principal principal
+    ) {
         log.info("modifyPlan()");
 
         plannerDto.setNo(no);
@@ -116,12 +117,17 @@ public class PlannerController {
                 return ResponseEntity.ok(resultMap);
 
             } else {
-                return ResponseEntity.badRequest().body(null);
+                Map<String, Object> errorMap = new HashMap<>();
+                errorMap.put("message", "File upload Fail");
+                return ResponseEntity.badRequest().body(errorMap);
 
             }
-        }
 
-        return ResponseEntity.ok(null);
+        } else {
+            Map<String, Object> resultMap = plannerService.modifyPlan(plannerDto);
+            return ResponseEntity.ok(resultMap);
+
+        }
 
     }
 

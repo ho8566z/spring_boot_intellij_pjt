@@ -249,15 +249,12 @@ function initEvents() {
             let title = document.querySelector('#show_plan input[name="p_title"]').value;
             let body = document.querySelector('#show_plan input[name="p_body"]').value;
 
-            let fileInput = document.querySelector('#show_plan input[name="p_file"]').value;
-
+            let fileInput = document.querySelector('#show_plan input[name="p_file"]');
             let file = fileInput.files.length > 0 ? fileInput.files[0] : null;
 
             fetchModifyPlan(no, year, month, date, title, body, file);
 
-
         }
-
 
     });
 
@@ -303,7 +300,7 @@ function initEvents() {
             let year = event.target.value;
             let month = document.querySelector('#show_plan select[name="dp_month"]').value;
 
-            setSelectDateOptions(year, month, 'wp_date');
+            setSelectDateOptions(year, month, 'dp_date');
 
         }
 
@@ -312,9 +309,9 @@ function initEvents() {
             console.log('dp_month CHANGED!!');
 
             let year = document.querySelector('#show_plan select[name="dp_year"]').value;
-            let month = event.target.value
+            let month = event.target.value;
 
-            setSelectDateOptions(year, month, 'wp_date');
+            setSelectDateOptions(year, month, 'dp_date');
 
         }
 
